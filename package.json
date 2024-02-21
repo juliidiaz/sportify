@@ -13,7 +13,7 @@
     "nodemon": "^3.0.1",
     "path": "^0.12.7"
   },
-  "name": "grupo-1-e-commerce-deportivo",
+  "name": "sportify",
   "description": "--------------- # Sobre el e-commerce # --------------",
   "version": "1.0.0",
   "main": "app.js",

@@ -43,7 +43,7 @@ app.use((req, res, next) => {
 
 app.use(methodOverride('_method'));
 
-const puerto = process.env.puerto || 8000;
+const puerto = process.env.puerto || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
