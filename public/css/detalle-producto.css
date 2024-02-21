@@ -1,0 +1,176 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Body */
+main {
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+article {
+  margin: 40px;
+  height: 100vh;
+}
+
+/* Carrusel */
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel,
+.slide,
+.carousel-inner {
+  width: 35vw;
+  max-width: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #FD611A
+}
+
+.carousel-indicators button {
+  color: black;
+}
+
+
+/* Info producto */
+.precio-container {
+  display: flex;
+  padding: 20px 0px 20px;
+  border-bottom: 1px solid black;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.precio {
+  font-size: 2rem;
+}
+
+.detalles {
+  width: 25%;
+}
+
+.descuento {
+  color: #FD611A;
+  font-size: 150%;
+}
+
+/* Talles */
+.talles {
+  padding: 20px;
+}
+
+.talles-radio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.btn-radio {
+  max-width: 50px;
+}
+
+
+/* Botones */
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.btn {
+  width: 100%;
+  margin: 5px 0px 0px 5px;
+}
+
+.btn-carrito {
+  background-color: #fd621a5d;
+  color: #FD611A;
+}
+
+.btn-carrito:hover {
+  background-color: #FD611A;
+  color: white;
+}
+
+/* Modal */
+.modal-header {
+  background-color: #FD611A;
+  color: white;
+}
+
+.modal-footer {
+  background-color: rgba(0, 0, 0, 0.911);
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+td {
+  text-align: right;
+}
+
+/* Responsive */
+
+/* Mobile */
+@media(max-width: 480px) {}
+
+/* Tablet */
+@media(max-width: 768px) {
+  .carousel {
+    width: 100%;
+  }
+
+  .detalles {
+    width: 100%;
+  }
+
+  .buttons {
+    display: block;
+  }
+
+  .carousel,
+  .slide,
+  .carousel-inner {
+    width: 100vw;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none;
+  }
+
+  article {
+    height: 100%;
+  }
+
+}

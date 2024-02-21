@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+header {
+    padding: 5px 0px 5px 0px;
+    background-color: #FD611A;
+    overflow: hidden;
+}
+
+
+
+.ofertas-header {
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.title-ofertas-header {
+    color: #FD611A;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+}
+
+.desc-ofertas-header {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+/*--------NUEVO NAVBAR*------------*/
+.display-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-nav {
+    height: 150px;
+    width: 100%;
+}
+
+.search-nav {
+    background-color: white;
+    color: rgb(197, 195, 195);
+    font-family: roboto;
+    font-size: medium;
+    width: 100%;
+    height: 37px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+
+.fa-search {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    font-size: larger;
+    right: 10px;
+    top: 7px;
+}
+
+.categ-nav {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    margin: 5px;
+    padding: 8px;
+}
+
+.categ-nav:hover {
+    background-color: #00000017;
+    color: black;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+
+.fa-bars {
+    font-size: xx-large;
+    margin: 10px;
+    padding: 3px;
+    color: white;
+}
+
+
+/* ----------------- FOOTER ------------------ */
+
+footer {
+    padding: 5px 0px 5px 0px;
+    background-color: #FD611A;
+    overflow: hidden;
+}
+
+.part-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.marca-footer {
+    width: 70%;
+}
+
+.title-footer {
+    font-weight: bold;
+    font-size: 13px;
+    text-align: start;
+    margin-bottom: 3px;
+    color: white;
+}
+
+.options-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.item-footer {
+    text-decoration: none;
+    color: white;
+}
+
+.item-footer:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.part-qr-footer {
+    width: 33%;
+}
+
+.qr-footer {
+    width: 100%;
+}
+
+.part-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.fa-facebook:hover {
+    color: #4267B2;
+    transition: 1s;
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+    transition: 1s;
+}
+
+.fa-whatsapp:hover {
+    color: #25D366;
+    transition: 1s;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+    transition: 1s;
+}
+
+.icon-footer {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* ----------- MOBILE NAVBAR ------------ */
+
+@media screen and (max-width: 420px) {
+
+    .first-part,
+    .second-part,
+    .busca,
+    .buscador,
+    .searcher {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: 1;
+    }
+
+    .container-fluid {
+        font-family: 'Roboto';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .offcanvas-body {
+        background-color: #FD611A;
+    }
+
+    .offcanvas-body ul li {
+        font-weight: bold;
+        color: white;
+    }
+
+    .offcanvas-body button {
+        border: 1px solid white;
+        color: white;
+    }
+
+    .offcanvas-header {
+        background-color: #FD611A;
+    }
+
+    .offcanvas-header h5 {
+        color: white;
+        text-decoration: underline white;
+    }
+}
+
+/* --------------- MOBILE FOOTER ----------- */
+
+@media (max-width:768px) {
+
+    .col-dos {
+        display: none;
+    }
+
+    .col-uno {
+        height: 100px;
+    }
+
+    .qr-footer {
+        display: none;
+    }
+
+    .marca-footer {
+        width: 90%;
+    }
+
+    .part-qr-footer {
+        width: 40%;
+    }
+
+    .part-icon {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width:768px) {
+
+    .col-cuatro {
+        display: none;
+    }
+
+}
+
+@media (max-width:992px) {
+
+    .part-qr-footer {
+        width: 60%;
+    }
+}
+
+/* ---------- DESKTOP - TABLET ------------ */
+
+@media screen and (min-width: 421px) {
+    .container-fluid {
+        display: none;
+    }
+
+}

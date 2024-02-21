@@ -1,0 +1,201 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;    
+}
+
+.row-flex-1 {
+    flex: 1;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.display-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-perfil{
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border: solid 4px gainsboro;
+    border-radius: 50%;
+}
+
+.subir-perfil{
+    border: solid gainsboro 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: grey;
+    position: absolute;
+    left: 187px;
+    bottom: 13px;
+    cursor: pointer;
+}
+
+.subir-perfil:hover {
+    transform: scale(1.1);
+    background-color: white;
+    transition: all .2s ease;
+}
+
+.fa-camera{
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 9px;
+}
+
+.fa-camera:hover {
+    transform: scale(1.1);
+    color: rgb(244, 123, 62);
+    transition: all .2s ease;
+}
+
+.crud-boton{
+    border: solid gainsboro 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    color: orangered;
+    
+}
+
+.submit-foto{
+    left: 234px;
+    bottom: 30px;
+}
+
+.submit-foto:hover {
+    background-color: rgb(84, 183, 84);
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.texto-mostrado {
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -23px;
+    left: 33px;
+    white-space: nowrap;
+    color: rgb(219, 78, 78);
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.check-info{
+    position: absolute;
+    color: orangered;
+    white-space: nowrap; 
+    left: 264px;
+    bottom: 30px;
+}
+
+.delete-foto{
+    left: 225px;
+    bottom: -5px;
+}
+
+.delete-info{
+    position: absolute;
+    color: orangered;
+    white-space: nowrap; 
+    left: 258px;
+    bottom: -5px;
+}
+
+.delete-foto:hover {
+    background-color: rgb(183, 84, 84);
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.fuentes-perfil{
+    font-family: roboto;
+    color: gray;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.compras-historial{
+    padding-top: 7px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.titulo-historial {
+    font-family: roboto;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid grey 2px;
+}
+
+.compras-historial li{
+    font-family: roboto;
+    font-size: small;
+    list-style-type: none;
+    color: gray;;
+    padding-top: 5px;
+}
+.img-product-us img {
+    width: 150px;
+}
+
+.product-usuario{
+    margin: 20px 00px 20px 10px;
+    display: flex;
+    flex-direction: row;
+}
+.texto-product-us{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.texto-product-us p{
+    font-family: roboto;
+}
+
+@media screen and (max-width: 600px){
+
+    .submit-foto {
+        left: -5px ;
+        top: 245px;
+    }
+
+    .delete-foto {
+        left: 150px ;
+        top: 245px;
+    }
+
+    .check-info {
+        left: 25px;
+        top: 246px;
+    }
+
+    .delete-info {
+        left: 180px ;
+        top: 245px;
+    }
+
+    .fuentes-perfil {
+        padding: 10px;
+    }
+
+}
